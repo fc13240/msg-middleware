@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/business/business.iml" filepath="$PROJECT_DIR$/business/business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/applications/applications.iml" filepath="$PROJECT_DIR$/applications/applications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kits/collector/collector.iml" filepath="$PROJECT_DIR$/kits/collector/collector.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/tests/console/console.iml" filepath="$PROJECT_DIR$/tests/console/console.iml" />
-      <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/dependencies/dependencies.iml" filepath="$PROJECT_DIR$/dependencies/dependencies.iml" />
-      <module fileurl="file://$PROJECT_DIR$/business/hbase-io/hbase-io.iml" filepath="$PROJECT_DIR$/business/hbase-io/hbase-io.iml" />
-      <module fileurl="file://$PROJECT_DIR$/consumer/log-consumer/log-consumer.iml" filepath="$PROJECT_DIR$/consumer/log-consumer/log-consumer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/producer/log2kafka/log2kafka.iml" filepath="$PROJECT_DIR$/producer/log2kafka/log2kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kits/hbase-io/hbase-io.iml" filepath="$PROJECT_DIR$/kits/hbase-io/hbase-io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kits/kits.iml" filepath="$PROJECT_DIR$/kits/kits.iml" />
+      <module fileurl="file://$PROJECT_DIR$/applications/log-consumer/log-consumer.iml" filepath="$PROJECT_DIR$/applications/log-consumer/log-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/applications/logs-producer/logs-producer.iml" filepath="$PROJECT_DIR$/applications/logs-producer/logs-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/applications/logs-storm/logs-storm.iml" filepath="$PROJECT_DIR$/applications/logs-storm/logs-storm.iml" />
       <module fileurl="file://$PROJECT_DIR$/msg-middleware.iml" filepath="$PROJECT_DIR$/msg-middleware.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/producer/producer.iml" filepath="$PROJECT_DIR$/producer/producer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/business/storm-computing/storm-computing.iml" filepath="$PROJECT_DIR$/business/storm-computing/storm-computing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tests/storm-demo/storm-demo.iml" filepath="$PROJECT_DIR$/tests/storm-demo/storm-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tests/storm-old/storm-old.iml" filepath="$PROJECT_DIR$/tests/storm-old/storm-old.iml" />
       <module fileurl="file://$PROJECT_DIR$/tests/tests.iml" filepath="$PROJECT_DIR$/tests/tests.iml" />
     </modules>
   </component>

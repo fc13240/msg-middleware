@@ -13,10 +13,12 @@
     <name>dependencies</name>
 
     <properties>
+        <spring.boot.version>1.3.6.RELEASE</spring.boot.version>
         <kafka.version>0.10.0.0</kafka.version>
-        <spring.boot.version>1.3.5.RELEASE</spring.boot.version>
-        <mybatis.version>3.4.0</mybatis.version>
-        <mysql.jdbc.version>6.0.2</mysql.jdbc.version>
+        <mybatis.version>3.4.1</mybatis.version>
+        <mybatis-spring.version>1.3.0</mybatis-spring.version>
+        <druid.version>1.0.22</druid.version>
+        <mysql.jdbc.version>5.1.39</mysql.jdbc.version>
         <google.guava.vesion>18.0</google.guava.vesion>
         <log4j.version>1.2.17</log4j.version>
         <slf4j.version>1.7.21</slf4j.version>
@@ -25,22 +27,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <!--kafka-->
-            <dependency>
-                <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka_2.11</artifactId>
-                <version>${kafka.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka-clients</artifactId>
-                <version>${kafka.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka-log4j-appender</artifactId>
-                <version>${kafka.version}</version>
-            </dependency>
+
             <!--spring-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -65,7 +52,7 @@
             <dependency>
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis-spring</artifactId>
-                <version>1.3.0</version>
+                <version>${mybatis-spring.version}</version>
             </dependency>
 
             <!--database & data source-->
@@ -77,8 +64,26 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
-                <version>1.0.19</version>
+                <version>${druid.version}</version>
             </dependency>
+
+            <!--kafka-->
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka_2.11</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-log4j-appender</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
+
             <!--misc-->
             <!--<dependency>-->
                 <!--<groupId>com.google.guava</groupId>-->

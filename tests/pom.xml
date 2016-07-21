@@ -14,8 +14,6 @@
     <name>tests</name>
     <modules>
         <module>console</module>
-        <module>storm-demo</module>
-        <module>storm-old</module>
     </modules>
 
 
@@ -27,4 +25,17 @@
         <!--<scope>test</scope>-->
         <!--</dependency>-->
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

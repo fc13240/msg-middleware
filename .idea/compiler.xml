@@ -22,32 +22,28 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="collector" />
         <module name="common" />
         <module name="console" />
         <module name="hbase-io" />
         <module name="log-consumer" />
-        <module name="log2kafka" />
-        <module name="storm-computing" />
-        <module name="storm-demo" />
-        <module name="storm-old" />
+        <module name="logs-producer" />
+        <module name="logs-storm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="business" target="1.8" />
+      <module name="applications" target="1.8" />
+      <module name="collector" target="1.8" />
       <module name="common" target="1.8" />
       <module name="console" target="1.8" />
-      <module name="consumer" target="1.8" />
-      <module name="dependencies" target="1.5" />
+      <module name="dependencies" target="1.8" />
       <module name="hbase-io" target="1.8" />
+      <module name="kits" target="1.8" />
       <module name="log-consumer" target="1.8" />
-      <module name="log2kafka" target="1.8" />
-      <module name="msg-middleware" target="1.5" />
+      <module name="logs-producer" target="1.8" />
+      <module name="logs-storm" target="1.8" />
+      <module name="msg-middleware" target="1.8" />
       <module name="parent" target="1.8" />
-      <module name="producer" target="1.8" />
-      <module name="storm" target="1.8" />
-      <module name="storm-computing" target="1.8" />
-      <module name="storm-demo" target="1.8" />
-      <module name="storm-old" target="1.8" />
       <module name="tests" target="1.8" />
     </bytecodeTargetLevel>
   </component>
