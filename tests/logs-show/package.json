@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "website for whu photography",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WHUPixels/website.git"
+  },
+  "author": "xuqiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WHUPixels/website/issues"
+  },
+  "homepage": "https://github.com/WHUPixels/website#readme"
+}

@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/kits/kits.iml" filepath="$PROJECT_DIR$/kits/kits.iml" />
       <module fileurl="file://$PROJECT_DIR$/applications/log-consumer/log-consumer.iml" filepath="$PROJECT_DIR$/applications/log-consumer/log-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/applications/logs-producer/logs-producer.iml" filepath="$PROJECT_DIR$/applications/logs-producer/logs-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logs-stats/logs-stats.iml" filepath="$PROJECT_DIR$/logs-stats/logs-stats.iml" />
       <module fileurl="file://$PROJECT_DIR$/applications/logs-storm/logs-storm.iml" filepath="$PROJECT_DIR$/applications/logs-storm/logs-storm.iml" />
       <module fileurl="file://$PROJECT_DIR$/msg-middleware.iml" filepath="$PROJECT_DIR$/msg-middleware.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
