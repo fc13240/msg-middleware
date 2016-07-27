@@ -1,0 +1,42 @@
+
+.stats_count_number {
+    font-size: 2rem;
+}
+
+.stats_count_desc {
+    font-size: 1rem;
+}
+
+.stats_bundle {
+    margin-top: 10%;
+}
+
+.commom_divider_stripe {
+    height: 200px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.display_table {
+    display: table;
+}
+
+.display_table_cell {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+/*.common_vertical_center_parent{*/
+/*position: relative;*/
+/*}*/
+
+/*.common_vertical_center_child{*/
+/*position: absolute;*/
+/*top:50%;*/
+/*-webkit-transform: translateY(-50%);*/
+/*-moz-transform: translateY(-50%);*/
+/*-ms-transform: translateY(-50%);*/
+/*-o-transform: translateY(-50%);*/
+/*transform: translateY(-50%);*/
+/*}*/
