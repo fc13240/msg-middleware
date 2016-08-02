@@ -14,10 +14,6 @@ body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
     margin-top: 10%;
 }
 
-.align_right {
-    float: right;
-    text-align: right;    /*padding-right: 10px;*/
-}
 
 .display_table {
     display: table;
@@ -26,12 +22,17 @@ body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
 .display_table_cell {
     display: table-cell;
     vertical-align: middle;
-
 }
 
-.line {
+.logs_genereal_line {
     fill: none;
     stroke: #00c5ff;
+    stroke-width: 1.5px;
+}
+
+.logs_exp_line {
+    fill: none;
+    stroke: #ff5522;
     stroke-width: 1.5px;
 }
 
@@ -39,45 +40,37 @@ body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
     height: 648px;;
 }
 
+
 /* divider_rs */
 .divider_white1 {
     height: 10px;
 }
-
 .divider_white2 {
     height: 20px;
 }
-
 .divider_white3 {
     height: 30px;
 }
-
 .divider_white4 {
     height: 40px;
 }
-
 .divider_white6 {
     height: 60px;
 }
-
 .divider_white8 {
     height: 80px;
 }
-
 .divider_white9 {
     height: 90px;
 }
-
 .divider_white10 {
     height: 100px;
 }
-
 ._divider_stripe {
     height: 200px;
     background-color: #f0f0f0;
     text-align: center;
 }
-
 ._text_align_center {
     text-align: center;
 }

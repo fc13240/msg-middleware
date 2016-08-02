@@ -82,7 +82,7 @@
     </div>
     <div class="row divider_white3 bg_white_pure"></div>
 
-    <div id="logsCurveHeader" class="row bg_white_pure container-fluid">
+    <div id="logsCurveHeader" class="row bg_white_pure ">
         <div class="col-sm-4 _text_align_center">
         </div>
         <div class="col-sm-4 _text_align_center">
@@ -98,9 +98,9 @@
         </span></div>
 
     </div>
-    <div id="logs_curve" class="row bg_white_pure">
+    <div id="logsGeneralCurve" class="row bg_white_pure">
         <div class="col-sm-12 _text_align_center">
-            <svg id="svgLogGenaral" width="1080" height="380"></svg>
+            <svg id="svgLogsGenaral" width="1080" height="380"></svg>
         </div>
     </div>
 
@@ -108,26 +108,76 @@
 <!--/系统概览模块-->
 
 <!--异常监控模块-->
-<div id="logs_exception" class="container screen-page bg_gray_shallow">
-    <h2>异常监控</h2>
+<div id="logs_exception" class="container-fluid screen-page bg_gray_barely">
+    <div class="row divider_white3"></div>
+
+    <div id="expLogsHeader" class="row  ">
+        <div class="col-sm-4 _text_align_center">
+        </div>
+        <div class="col-sm-4 _text_align_center">
+            <span class="h3">异常日志监控</span>
+        </div>
+        <div class="col-sm-4 _text_align_right">
+            <span class="align_right ">
+                <a id="a01" href="javascript:void(0)" class="btn btn-info">近1小时</a>
+                <a id="a02" href="javascript:void(0)" class="btn ">24小时</a>
+                <a id="a03" href="javascript:void(0)" class="btn ">昨天</a>
+                <a id="a04" href="javascript:void(0)" class="btn ">7天</a>
+                <a id="a05" href="javascript:void(0)" class="btn ">本月</a>
+            </span>
+        </div>
+    </div>
+    <div id="expLogsCurve" class="row ">
+        <div class="col-sm-12 _text_align_center">
+            <svg id="svgLogsExp" width="1080" height="380"></svg>
+        </div>
+    </div>
 </div>
 <!--/异常监控模块-->
 
 <!--日志统计模块-->
-<div id="logs_stats" class="container-fluid _divider_stripe">
+<div id="logs_stats" class="container-fluid  bg_gray_shallow screen-page">
     <h2>日志统计</h2>
 </div>
 <!--/日志统计模块-->
 
 <!--用户挖掘模块-->
-<div id="logs_behavior" class="container">
+<div id="logs_behavior" class="container-fluid screen-page">
     <h2>用户挖掘</h2>
 </div>
 <!--/用户挖掘模块-->
 
 <!--末尾页脚-->
-<div id="last_footer" class="container _divider_stripe">
-    <h2>描述声明</h2>
+<div id="last_footer" class="container-fluid _divider_stripe bg_gray_">
+<div class="row divider_white4"></div>
+    <div class="row _text_align_center">
+        <div class="col-sm-12">
+            <div class="h5">联系我们</div>
+        </div>
+    </div>
+    <div class="row divider_white2"></div>
+
+    <div class="row">
+        <div class="col-sm-6 _text_align_right">
+            <i class="fa fa-home"></i>
+        </div>
+        <div class="col-sm-6 _text_align_left">
+            <span style="padding-left: 15px">湖北武汉</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 _text_align_right">
+            <i class="fa fa-phone"></i>        </div>
+        <div class="col-sm-6 _text_align_left">
+            <span style="padding-left: 15px">17086542389</span>        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 _text_align_right">
+            <i class="fa fa-envelope"></i>        </div>
+        <div class="col-sm-6 _text_align_left">
+            <span style="padding-left: 15px">helloworld@qq.com</span>        </div>
+    </div>
+
 </div>
 <!--/末尾页脚-->
 
