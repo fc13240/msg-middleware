@@ -11,15 +11,15 @@
     <!--无需单独引入bootsrap css和js，它们绑定在bmd-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!--<link rel="stylesheet" href="https://cdn.rawgit.com/FezVrasta/bootstrap-material-design/dist/dist/bootstrap-material-design.min.css">-->
     <link rel="stylesheet" href="../res/styles/css/bootstrap-material-design.css"/>
     <link rel="stylesheet" href="../res/fonts/css/font-awesome.css">
     <link rel="stylesheet" href="../res/styles/general.css"/>
+    <link rel="stylesheet" href="../res/styles/colors.css"/>
 </head>
 <body>
 
 <!--首屏轮播-->
-<div id="first_slider">
+<div id="first_slider" class="screen-page">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -29,16 +29,16 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <img data-src="holder.js/1600x670/auto/#777:#ffffff/text:系统概览" alt="First slide">
+                <img data-src="holder.js/1360x650/auto/#777:#ffffff/text:系统概览" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img data-src="holder.js/1600x670/auto/#666:#ffffff/text:异常监控" alt="Second slide">
+                <img data-src="holder.js/1360x650/auto/#666:#ffffff/text:异常监控" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img data-src="holder.js/1600x670/auto/#555:#ffffff/text:日志统计" alt="Third slide">
+                <img data-src="holder.js/1360x650/auto/#555:#ffffff/text:日志统计" alt="Third slide">
             </div>
             <div class="carousel-item">
-                <img data-src="holder.js/1600x670/auto/#444:#ffffff/text:用户挖掘" alt="Third slide">
+                <img data-src="holder.js/1360x650/auto/#444:#ffffff/text:用户挖掘" alt="Third slide">
             </div>
         </div>
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -55,10 +55,9 @@
 <!--/首屏轮播-->
 
 <!--系统概览模块-->
-<div id="logs_overview" class="container-fluid">
+<div id="logs_overview" class="container-fluid ">
 
-    <div id="apps_general" class="row commom_divider_stripe">
-
+    <div id="apps_general" class="row _divider_stripe">
         <div class="col-sm-4 ">
             <div style="margin-top: 10%">
                 <i class="fa fa-cubes fa-2x"></i>
@@ -66,7 +65,6 @@
                 <div class="stats_count_desc">接入应用数</div>
             </div>
         </div>
-
         <div class="col-sm-4 ">
             <div style="margin-top: 10%">
                 <i class="fa fa-th fa-2x"></i>
@@ -74,7 +72,6 @@
                 <div class="stats_count_desc">日志记录数</div>
             </div>
         </div>
-
         <div class="col-sm-4 ">
             <div style="margin-top: 10%">
                 <i class="fa fa-clock-o fa-2x"></i>
@@ -83,23 +80,41 @@
             </div>
         </div>
     </div>
+    <div class="row divider_white3 bg_white_pure"></div>
 
-</div>
-<div id="logs_curve" style="background-color: #f0f0f0;">
-    变化曲线j
-</div>
+    <div id="logsCurveHeader" class="row bg_white_pure container-fluid">
+        <div class="col-sm-4 _text_align_center">
+        </div>
+        <div class="col-sm-4 _text_align_center">
+            <span class="h3">日志实时处理量变化曲线</span>
+        </div>
+        <div class="col-sm-4 _text_align_right">
+   <span class="align_right ">
+            <a id="a1" href="javascript:void(0)" class="btn btn-info">近1小时</a>
+            <a id="a2" href="javascript:void(0)" class="btn ">24小时</a>
+            <a id="a3" href="javascript:void(0)" class="btn ">昨天</a>
+            <a id="a4" href="javascript:void(0)" class="btn ">7天</a>
+            <a id="a5" href="javascript:void(0)" class="btn ">本月</a>
+        </span></div>
+
+    </div>
+    <div id="logs_curve" class="row bg_white_pure">
+        <div class="col-sm-12 _text_align_center">
+            <svg id="svgLogGenaral" width="1080" height="380"></svg>
+        </div>
+    </div>
 
 </div>
 <!--/系统概览模块-->
 
 <!--异常监控模块-->
-<div id="logs_exception" class="container">
+<div id="logs_exception" class="container screen-page bg_gray_shallow">
     <h2>异常监控</h2>
 </div>
 <!--/异常监控模块-->
 
 <!--日志统计模块-->
-<div id="logs_stats" class="container commom_divider_stripe">
+<div id="logs_stats" class="container-fluid _divider_stripe">
     <h2>日志统计</h2>
 </div>
 <!--/日志统计模块-->
@@ -111,7 +126,7 @@
 <!--/用户挖掘模块-->
 
 <!--末尾页脚-->
-<div id="last_footer" class="container commom_divider_stripe">
+<div id="last_footer" class="container _divider_stripe">
     <h2>描述声明</h2>
 </div>
 <!--/末尾页脚-->
@@ -124,9 +139,10 @@
 <script type="text/javascript" src="../res/scripts/js/holder-2.6.0.min.js"></script>
 <!--<script src="https://cdn.rawgit.com/fezvrasta/bootstrap-material-design/dist/dist/bootstrap-material-design.iife.min.js"></script>-->
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script type="text/javascript" src="../res/scripts/js/d3.js"></script>
+<script type="text/javascript" src="../res/scripts/js/d3-4.1.1.js"></script>
+<script type="text/javascript" src="../res/scripts/scripts.js"></script>
 <script>
-//    $('body').bootstrapMaterialDesign()
+    //    $('body').bootstrapMaterialDesign()
 </script>
 </body>
 </html>
