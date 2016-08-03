@@ -24,18 +24,6 @@ body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
 }
 
-.logs_genereal_line {
-    fill: none;
-    stroke: #00c5ff;
-    stroke-width: 1.5px;
-}
-
-.logs_exp_line {
-    fill: none;
-    stroke: #ff5522;
-    stroke-width: 1.5px;
-}
-
 .screen-page {
     height: 648px;;
 }
@@ -65,6 +53,15 @@ body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
 }
 .divider_white10 {
     height: 100px;
+}
+.divider_white20 {
+    height: 200px;
+}
+.divider_white22 {
+    height: 220px;
+}
+.divider_white25 {
+    height: 250px;
 }
 ._divider_stripe {
     height: 200px;
